@@ -1,23 +1,13 @@
-# Nuxt Minimal Starter
+# LumaUI
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+## Get Started
 
 Make sure to install dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+npm install lumaui
 ```
 
 ## Development Server

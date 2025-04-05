@@ -1,0 +1,55 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #3498db;
+}
+
+.badge .badge-icon {
+  margin-left: 8px; /* Базовий відступ для іконки */
+}
+
+
+/* Варіанти кольорів */
+.badge-primary {
+  background-color: #3498db;
+}
+
+.badge-success {
+  background-color: #2ecc71;
+}
+
+.badge-danger {
+  background-color: #e74c3c;
+}
+
+.badge-warning {
+  background-color: #f39c12;
+}
+
+.badge-info {
+  background-color: #1abc9c;
+}
+
+/* Розміри бейджів */
+.badge-small {
+  font-size: 0.875rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.badge-medium {
+  font-size: 1.25rem;
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+.badge-large {
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  border-radius: 12px;
+}

@@ -1,0 +1,65 @@
+.switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.switch-track {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.switch-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: white;
+  transition: left 0.3s ease;
+}
+
+.switch-checked .switch-track {
+  background-color: #4caf50; /* Зеленый цвет, когда включено */
+}
+
+.switch-checked .switch-thumb {
+  left: calc(100% - 23px);
+}
+
+.switch-default .switch-track {
+  background-color: #ccc;
+}
+
+.switch-success .switch-track {
+  background-color: #4caf50;
+}
+
+.switch-danger .switch-track {
+  background-color: #e53935;
+}
+
+.switch-info .switch-track {
+  background-color: #2196f3;
+}
+
+.switch-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.switch-disabled .switch-track {
+  background-color: #e0e0e0;
+}
+
+.switch-disabled .switch-thumb {
+  background-color: #bdbdbd;
+}

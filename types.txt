@@ -1,0 +1,21 @@
+Types
+
+Button
+varint - string
+disabled - boolean
+animation - string
+
+Badge
+label - string
+varint - string
+size - string
+icon - object
+orientation - string
+
+
+Tooltip
+text - string
+position - string
+trigger - string
+delay - number
+variant - string

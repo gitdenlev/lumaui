@@ -1,0 +1,135 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  font-size: 24px;
+
+  &:disabled {
+    background-color: #f5f5f5; /* Світлий фон */
+    color: #b0b0b0; /* Світлий текст */
+    border-color: #dcdcdc; /* Світла обводка */
+    cursor: not-allowed; /* Змінюємо курсор на не дозволено */
+    opacity: 0.6; /* Зменшуємо прозорість */
+    box-shadow: none; /* Видаляємо тінь */
+    
+    /* Заборона hover для disabled кнопки */
+    &:hover {
+      background-color: #f5f5f5; /* зберігаємо той самий фон */
+      color: #b0b0b0; /* зберігаємо той самий текст */
+      border-color: #dcdcdc; /* зберігаємо ту саму обводку */
+    }
+  }
+
+  &.button-reset {
+    all: unset;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(0.98) !important;
+  }
+}
+
+
+.button-aurora {
+  background-color: #4caf50; /* зелений */
+  color: #ffffff;
+  border-color: #4caf50;
+
+  &:hover {
+    background-color: #388e3c;
+  }
+}
+
+.button-nimbus {
+  background-color: #f0f0f0; /* світло-сірий */
+  color: #333333;
+  border-color: #d6d6d6;
+
+  &:hover {
+    background-color: #e2e2e2;
+  }
+}
+
+.button-crimson {
+  background-color: #e53935; /* червоний */
+  color: #ffffff;
+  border-color: #e53935;
+
+  &:hover {
+    background-color: #c62828;
+  }
+}
+
+.button-verdant {
+  background-color: #00c853; /* смарагдовий */
+  color: #ffffff;
+  border-color: #00c853;
+
+  &:hover {
+    background-color: #009624;
+  }
+}
+
+.button-solaris {
+  background-color: #ffa726; /* помаранчевий */
+  color: #ffffff;
+  border-color: #ffa726;
+
+  &:hover {
+    background-color: #fb8c00;
+  }
+}
+
+.button-azure {
+  background-color: #2196f3; /* синій */
+  color: #ffffff;
+  border-color: #2196f3;
+
+  &:hover {
+    background-color: #1976d2;
+  }
+}
+
+.button-obsidian {
+  background-color: #212121; /* чорний */
+  color: #ffffff;
+  border-color: #212121;
+
+  &:hover {
+    background-color: #000000;
+  }
+}
+
+.button-ivory {
+  background-color: #ffffff; /* білий */
+  color: #333333;
+  border-color: #d6d6d6;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.button-halo {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+
+  &:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+}

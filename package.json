@@ -1,6 +1,7 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "lumaui",
+  "version": "1.0.0",
+  "private": false,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
@@ -10,8 +11,55 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^3.14.1592",
-    "vue": "latest",
-    "vue-router": "latest"
+    "@iconify/vue": "^4.1.2",
+    "animate.css": "^4.1.1",
+    "nuxt": "^3.14.1592"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.0",
+    "sass": "^1.81.0",
+    "typescript": "^5.6.3",
+    "vue-tsc": "^2.1.10"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0",
+    "vue-router": "^4.1.0"
+  },
+  "description": "LumaUI is an elegant and flexible UI component library designed for rapidly building modern and user-friendly interfaces. Enjoy a wide range of ready-to-use, easily customizable components that deliver a great user experience.",
+  "main": "index.ts",
+  "keywords": [
+    "vue",
+    "ui",
+    "components",
+    "library",
+    "frontend",
+    "design system"
+  ],
+  "files": [
+    ".output/public",
+    ".output/server/chunks",
+    "components",
+    "styles",
+    "index.ts",
+    "README.md",
+    "LICENSE",
+    "shims-vue.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": "./.output/public/_nuxt/index.mjs",
+      "require": "./.output/server/chunks/index.cjs"
+    },
+    "./components/*": {
+      "import": "./dist/components/*.mjs",
+      "require": "./dist/components/*.cjs"
+    },
+    "./styles/main.scss": "./assets/styles/main.scss"
+  },
+  "author": "gitdenlev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitdenlev/lumaui.git"
   }
 }
